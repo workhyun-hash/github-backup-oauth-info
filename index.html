@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>GitHub Backup Manager — Google Drive OAuth Information</title>
+  <style>
+    :root{color-scheme:light dark;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+    body{max-width:720px;margin:7vh auto;padding:0 22px;line-height:1.7}
+    h1{line-height:1.25}a{color:#1683c9}section{margin-top:28px}
+    footer{border-top:1px solid #8885;margin-top:35px;padding-top:16px;font-size:.875rem}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>GitHub Backup Manager</h1>
+    <p><strong>Private, personal-use backup automation.</strong> This utility is run locally by its owner to back up the owner's GitHub repositories to the owner's Google Drive.</p>
+    <section>
+      <h2>Purpose</h2>
+      <p>The local Windows application collects GitHub repository contents and associated metadata, encrypts backup snapshots with restic, and transfers those snapshots to the owner's Google Drive through rclone.</p>
+      <p>This public website provides OAuth consent information only. It does not request access tokens, process backup contents, or host private backup data. The application is not offered as a hosted service to others.</p>
+    </section>
+    <section>
+      <h2>Google Drive access</h2>
+      <p>Google authorization allows the owner's rclone installation to upload, list, retrieve, and manage backup files according to the granted Google Drive access scope. Access tokens stay in the owner's local rclone configuration. The encryption password is managed separately.</p>
+      <p>The owner may revoke the application's access through Google Account third-party access settings. This would prevent further cloud backups until authorization is restored.</p>
+    </section>
+    <section>
+      <h2>Privacy and contact</h2>
+      <p>Read the <a href="privacy.html">Privacy Policy</a>. For support or data-related questions, contact the email displayed on the Google OAuth consent screen.</p>
+    </section>
+  </main>
+  <footer>Independently operated; not affiliated with Google or GitHub.</footer>
+</body>
+</html>
