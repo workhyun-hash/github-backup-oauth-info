@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Privacy Policy — GitHub Backup Manager</title>
+  <style>
+    :root{color-scheme:light dark;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+    body{max-width:720px;margin:7vh auto;padding:0 22px;line-height:1.7}
+    h1{line-height:1.25}a{color:#1683c9}section{margin-top:25px}
+    footer{border-top:1px solid #8885;margin-top:35px;padding-top:16px;font-size:.875rem}
+  </style>
+</head>
+<body>
+  <main>
+    <p><a href="./">← Home</a></p>
+    <h1>Privacy Policy</h1>
+    <p><strong>Application:</strong> GitHub Backup Manager<br>
+    <strong>Last updated:</strong> October 20, 2026</p>
+    <section><h2>Who operates this app?</h2>
+      <p>This is a locally run, personal-use GitHub backup utility operated by its owner. It is not a hosted service offered to other users. Contact the support email shown on the OAuth consent screen with questions.</p>
+    </section>
+    <section><h2>Data handled</h2>
+      <p>The application retrieves the owner's selected GitHub repository contents and available metadata such as commit history, issues, and pull requests. With the owner's permission, rclone uses Google Drive access to create, list, read, and remove encrypted backup objects, subject to the granted scope and backup policy.</p>
+    </section>
+    <section><h2>Where the data goes</h2>
+      <p>Before upload, restic encrypts backup snapshots on the owner's PC. Encrypted data is uploaded to the owner's Google Drive. Google OAuth access tokens are kept in the owner's local rclone configuration; encryption passwords remain under the owner's control. This public website does not collect authentication credentials or backup contents.</p>
+    </section>
+    <section><h2>Sharing and purpose</h2>
+      <p>Data is used only for owner-authorized backup, restore and storage management. It is not sold or used for targeted advertising. Google and GitHub may separately process service and connection information according to their own policies.</p>
+    </section>
+    <section><h2>Retention and deletion</h2>
+      <p>Backups are retained according to the owner's chosen snapshot policy; automatic pruning starts only after recovery validation and explicit enabling. The owner can delete cloud backup objects and local credentials, or revoke OAuth authorization in their Google Account. Revocation by itself does not delete existing encrypted backups.</p>
+    </section>
+    <section><h2>Public website</h2>
+      <p>This static site has no embedded analytics, trackers, forms, or custom JavaScript. GitHub Pages may process ordinary hosting logs under GitHub's privacy policies.</p>
+    </section>
+    <section><h2>Changes</h2>
+      <p>This policy will be updated when the application's data handling materially changes.</p>
+    </section>
+  </main>
+  <footer>Independently operated; not affiliated with Google or GitHub.</footer>
+</body>
+</html>
